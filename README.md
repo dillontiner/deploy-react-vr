@@ -1,6 +1,6 @@
 # Deploying Your ReactVR App: init to AWS in 15 Minutes
 
-These instructions step through the process of deploying a virtual reality environment on AWS starting from the ReactVR command line interface. This tutorial assumes you have an AWS account, Docker, and Node set up. See the corresponding [blog post]() for more details.
+These instructions step through the process of deploying a virtual reality environment on AWS starting from the ReactVR command line interface. This tutorial assumes you have an AWS account, Docker, and Node set up. See the corresponding [blog post](https://medium.com/@dillontiner/deploying-your-reactvr-app-init-to-aws-in-15-minutes-10e77b80bbd7) for more details.
 
 First, install the ReactVR CLI and create a new project.
 
