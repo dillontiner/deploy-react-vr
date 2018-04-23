@@ -7,7 +7,11 @@
     "bundle": "node node_modules/react-vr/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
     "devtools": "react-devtools",
-    "test": "jest"
+    "test": "jest",
+    "docker-build": "docker build -t react-vr-hello ./docker",
+    "docker-start": "docker run -p 8081:8081 react-vr-hello",
+    "docker-stop": "ID=$(docker ps -qf 'ancestor=react-vr-hello') && docker stop $ID",
+    "docker-clean": "IDS=$(docker ps -aqf 'ancestor=react-vr-hello') && docker rm $IDS"
   },
   "dependencies": {
     "ovrui": "~2.0.0",
