@@ -36,7 +36,7 @@ $ cd docker
 $ http-server -p 8081
 ```
 
-### Create the Docker image
+### Create the Docker Image
 Create a `Dockerfile` in the docker folder with the following as its contents:
 ```
 FROM node:carbon
@@ -80,6 +80,8 @@ $ cp ../docker.zip ./
 $ unzip docker.zip
 $ ls
 ```
+
+### Deploy with Elastic Beanstalk
 
 Now we just follow the AWS steps for [deploying](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-singlecontainer-deploy.html) a single Docker container to Elastic Beanstalk. I've listed these here with the necessary details specified.
 1. Open the Elastic Beanstalk console with this [preconfigured link](https://console.aws.amazon.com/elasticbeanstalk/home#/newApplication?applicationName=tutorials&environmentType=LoadBalanced)
